@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ListManipulator<T> {
     private static final int ARRAY_SIZE = 10;
-    private ArrayList<T> arr = new ArrayList<T>(ARRAY_SIZE);
+    private final ArrayList<T> arr = new ArrayList<>(ARRAY_SIZE);
 
 
     public void add(T newElement) throws NoSpaceException {
